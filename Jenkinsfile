@@ -1,4 +1,3 @@
-cat <<-'JENKINSFILE' > Jenkinsfile
 pipeline {
   
 agent { docker { image 'ruby:2.6.3' } }
@@ -25,9 +24,16 @@ stage('test') {
       
 steps {
         
-sh 'rake'
-      }   
+sh 'rake ci:all'
+      }
+      
+post {
+        
+always {
+          
+junit 'test/reports/TEST-AppTest.xml'
+        }
+      }    
     }
   }
 }
-JENKINSFILE

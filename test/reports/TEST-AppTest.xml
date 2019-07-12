@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="3" time="0.798954762" failures="0" errors="0" skipped="0" assertions="6" timestamp="2019-07-11T21:18:09-07:00">
+  <testcase name="test_it_says_hello_to_a_person" time="0.78604" assertions="2">
+  </testcase>
+  <testcase name="test_it_says_hello_world_root" time="0.005978017" assertions="2">
+  </testcase>
+  <testcase name="test_it_says_hello_world_w_hello" time="0.005602355" assertions="2">
+  </testcase>
+</testsuite>
